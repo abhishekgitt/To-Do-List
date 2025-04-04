@@ -1,0 +1,82 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.headding {
+    color: white;
+    background-color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    margin: 0;
+}
+
+.switch {
+    display: block;
+    padding: 8px 15px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    float: right;
+    margin: 10px 0;
+}
+
+.switch:hover{
+    background-color: gray;
+}
+.button-container {
+    margin-bottom: 5px;
+    overflow: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    text-align: center;
+    border: 2px solid black;
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+th {
+    font-weight: bold;
+}
+
+tr {
+    height: 50px;
+}
+
+.content-wrapper {
+    padding: 20px;
+}
+
+.first-row {
+    background-color: gray;
+}
+
+.delete-button,
+.update-button {
+    background-color: black;
+    text-decoration: none;
+    border-radius: 10px;
+    color:white;
+    padding:12px;
+    margin: 3px;
+
+}
+
+.delete-button:hover,
+.update-button:hover {
+    background-color: grey;
+    
+}

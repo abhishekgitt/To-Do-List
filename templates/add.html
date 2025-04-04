@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Tdoo</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/add.css')}}">
+</head>
+
+<body>
+    <div class="main">
+        <div class="main-title">
+            <h1>{{ "Update Todo" if is_update else "Add Todo" }}</h1><br><br>
+        </div>
+        <form action="{{ url_for('updateTodo', id=todo.id) if is_update else url_for('addTodo') }}" method="POST">
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" value="{{ todo.title if is_update else '' }}" required><br>
+
+            <label for="content">Content</label>
+            <textarea id="content" name="content" required>{{- todo.content if is_update else '' -}}</textarea><br>
+
+            <button type="submit">{{ "Update" if is_update else "Add"}}</button>
+        </form>
+    </div>
+
+
+</body>
+
+</html>

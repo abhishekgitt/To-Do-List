@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/index.css')}}">
+</head>
+
+<body>
+    <title>Todo List</title>
+    <h1 class="headding">Todo List</h1>
+    <div class="content-wrapper">
+        <div class="button-container">
+            <a class="switch" href="{{ url_for('addTodo') }}">Add Todo</a>
+        </div>
+        <table class="tb">
+            <thead>
+                <tr class="first-row">
+                    <th scope="col">Sl.No</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Content</th>
+                    <th scope="col">Date & Time</th>
+                    <th scope="col">Modify</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for todo in todos | reverse %}
+                <tr>
+                    <th scope="row">{{ loop.index }}</th>
+                    <td><strong>{{ todo.title }}</strong></td>
+                    <td>{{ todo.content }}</td>
+                    <td>{{ todo.date_time }}</td>
+                    <td>
+                        <a href="{{ url_for('updateTodo', id=todo.id )}}" class="update-button">update</a>
+                        <a href="{{ url_for('deleteTodo', id=todo.id )}}" class="delete-button" 
+                            onclick="return confirm('Are you sure you want to delete this item ?')">delete</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
