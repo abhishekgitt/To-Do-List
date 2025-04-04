@@ -42,23 +42,23 @@ form{
     align-items: center;
 }
 button {
-padding: 12px 30px; /* Makes the button bigger */
-font-size: 18px; /* Increases font size for better visibility */
-background-color: #000; /* Sets the background color to green */
-color: white; /* Makes the text color white */
+padding: 12px 30px; 
+font-size: 18px; 
+background-color: #000; 
+color: white; 
 border: 3px solid grey;
-border-radius: 10px; /* Adds rounded corners */
-cursor: pointer; /* Changes the cursor to a pointer on hover */
+border-radius: 10px; 
+cursor: pointer; 
 }
 
 button:hover {
-padding: 13px 31px; /* Makes the button big */
-font-size: 18px; /* Makes the text bigger */
-background-color: grey; /* Green background */
-color: white; /* White text color */
-border: 3px solid black; /* Adds a blue border */
-border-radius: 10px; /* Rounded corners for the button */
-cursor: pointer; /* Pointer cursor on hover */
+padding: 13px 31px; 
+font-size: 18px;
+background-color: grey;
+color: white;
+border: 3px solid black;
+border-radius: 10px; 
+cursor: pointer; 
 
 
 }   
